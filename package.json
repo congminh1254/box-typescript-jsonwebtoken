@@ -11,14 +11,12 @@
   },
   "dependencies": {
     "box-node-sdk": "3.4.2",
-    "box-typescript-sdk-gen": "0.3.0",
-    "jsonwebtoken": "9.0.2",
+    "box-typescript-sdk-gen": "https://github.com/congminh1254/box-typescript-sdk-gen.git",
     "next": "14.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/jsonwebtoken": "^9.0.6",
     "@types/node": "20.11.17",
     "@types/react": "18.2.55",
     "@types/react-dom": "18.2.19",
