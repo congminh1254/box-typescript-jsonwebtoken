@@ -1,7 +1,6 @@
 import BoxSDK from 'box-node-sdk'
 import { BoxClient } from 'box-typescript-sdk-gen'
-import { BoxJwtAuth, JwtConfig } from 'box-typescript-sdk-gen/lib/jwtAuth.generated.js'
-import jsonwebtoken from 'jsonwebtoken'
+import { BoxJwtAuth, JwtConfig } from 'box-typescript-sdk-gen/lib/box/jwtAuth.generated.js'
 // const { BoxJwtAuth, JwtConfig } = await import('box-typescript-sdk-gen/lib/jwtAuth.generated.js')
 // import { createRequire } from 'module'
 // const require = createRequire(import.meta.url)
@@ -29,7 +28,6 @@ export default function HomePage() {
   async function boxGetTokenNew() {
     'use server'
 
-    console.log({ jsonwebtoken })
     console.log(atob(process.env.JWT_CONFIG_BASE_64 || ''))
     const boxJwtConfig = JwtConfig.fromConfigJsonString(atob(process.env.JWT_CONFIG_BASE_64 || ''))
     const boxJwtAuth = await new BoxJwtAuth({ config: boxJwtConfig })
