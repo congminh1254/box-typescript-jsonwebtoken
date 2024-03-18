@@ -5,6 +5,12 @@ import { BoxJwtAuth, JwtConfig } from 'box-typescript-sdk-gen/lib/box/jwtAuth.ge
 // import { createRequire } from 'module'
 // const require = createRequire(import.meta.url)
 // const { BoxJwtAuth, JwtConfig } = require('box-typescript-sdk-gen/lib/jwtAuth.generated.js')
+const jwt = require('jsonwebtoken');
+try {
+jwt.decode('')
+}
+catch (e) {
+}
 
 export default function HomePage() {
   async function boxGetTokenOld() {

@@ -12,6 +12,7 @@
   "dependencies": {
     "box-node-sdk": "3.4.2",
     "box-typescript-sdk-gen": "0.5.0",
+    "jsonwebtoken": "^9.0.2",
     "next": "14.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
